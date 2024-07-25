@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-07-25T18:24:43.464Z",
+    "end": "2024-07-25T18:24:49.508Z",
+    "duration": 6044,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1a7f344b-808f-4409-95a1-889ae5f79316",
+      "title": "",
+      "fullFile": "cypress\\e2e\\login-ok.cy.js",
+      "file": "cypress\\e2e\\login-ok.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f2dc5f12-affa-4cb4-98e2-7ee50353f30f",
+          "title": "Testar página de login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Percorrer o formulário de login, efetuando o login de forma correta.",
+              "fullTitle": "Testar página de login Percorrer o formulário de login, efetuando o login de forma correta.",
+              "timedOut": null,
+              "duration": 2681,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.login('ana@email.com', \"Senha123\"); //essa função login resume uns 3 get, que estão em commands.js na pasta support",
+              "err": {},
+              "uuid": "15add1ce-0bd1-4cb0-be0a-181d9731578e",
+              "parentUUID": "f2dc5f12-affa-4cb4-98e2-7ee50353f30f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "15add1ce-0bd1-4cb0-be0a-181d9731578e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2681,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

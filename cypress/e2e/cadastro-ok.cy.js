@@ -1,12 +1,9 @@
 describe('Testar página de cadastro.', () => {
+  beforeEach(()=>{
+    cy.visitaSite('register-button')//essa func está na pasta support no arquivo commands.js (como todas as funcs customizadas!)
+  })
   it('Percorrer um formulário de forma que seja cadastrado um usuário.', () => {
-    cy.visit('https://adopet-frontend-cypress.vercel.app/')//esse comando faz que o cypress vizite esse site
-    cy.get('[data-test="register-button"]').click()//esse comando faz q o cypress clique em uma ancora com o nome Cadastrar
-    cy.get('[data-test="input-name"]').type('Ana de Paula')//o get captura um elemento(input com um atributu name que recebe nome), o type vai escrever oque estiver em na string
-    cy.get('[data-test="input-email"]').type('testeDahora@gmail.com')
-    cy.get('[data-test="input-password"]').type('Teste123321')
-    cy.get('[data-test="input-confirm-password"]').type('Teste123321')
-    cy.get('[data-test="submit-button"]').click()
+    cy.cadastro('Ana de Paula', 'testDahora@email.com', 'TestDahora123', 'TestDahora123')//essa func cadastro esta na pasta support em commands.js
   })
 })
 // describe('exercícios', ()=> {
